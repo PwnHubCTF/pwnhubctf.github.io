@@ -24,6 +24,10 @@ Instances challenges need to have a working docker-compose.yml
 
 [Example 2 - web](https://github.com/PwnHubCTF/challenges/tree/main/web)
 
+:::note
+In the docker-compose.yml file, there is only one port binded
+:::
+
 ### Single instance
 
 A single instance can be deployed by the administrator, and will be used by all the players

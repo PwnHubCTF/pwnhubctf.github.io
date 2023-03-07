@@ -86,63 +86,9 @@ Right after an import, you can check logs to see what's happened, at the bottom 
 If you need to update a challenge, you need to delete it in the Challenge list, and re-import challenges from github
 :::
 
-## Signed flag
 
-To use this feature, your challenge need to:
-- Be a `multiple` instance
-- Use an env var `FLAG` to set the challenge flag
-
-If you want to set a signed flag on a single/false instance challenge, you'll need to handle it manually in the challenge:
-
-**At the moment when the user is supposed to get the flag**
+<!-- **At the moment when the user is supposed to get the flag**
 - Ask the user to give his ID
 - Generate the flag with the route
 `GET /challenge/flag/:challenge_id/:user_id`
-- Give him the generated flag
-
-
-# XSS Challenge configuration
-
-If your challenge use the XSS Bot feature `xss: true`, it need to be configured (same as the deployer)
-
-More info on the dedicaced repository [https://github.com/PwnHubCTF/xss_bot](https://github.com/PwnHubCTF/xss_bot)
-
-note: You don't have to take care of the flag for XSS challenges, the bot has the flag in his cookies
-
-## Exemple of a complex configuration
-
-In this exemple, we're going to setup a multiple instance challenge, with signed flag
-
-`config.yaml`
-
-```yaml
-id: multiple_and_signed
-name: Example
-category: crypto
-flag: PWNME{futur_signed_flag}
-sign_flag: true
-author: eteck
-instance: multiple
-difficulty: 4  
-files:
-  - hint.txt
-```
-
-`docker-compose.yml`
-
-```yml
-version: "3.3"
-services:
-  appname:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    restart: always
-    ports:
-      - 4000
-    environment:
-      - FLAG=${FLAG}
-```
-
-- There is only one port binded
-- The flag is set to `${FLAG}`. This env var will be populate for each users
+- Give him the generated flag -->
