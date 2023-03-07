@@ -1,35 +1,32 @@
-import React from 'react';
 import clsx from 'clsx';
+import React from 'react';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Challenge Deployer',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Allow player to deploy their own challenges instances
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Github Challenges import',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Sync your challenges with a private github repository
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'XSS Bot',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Automatically setup an XSS Bot for web challenges
       </>
     ),
   },

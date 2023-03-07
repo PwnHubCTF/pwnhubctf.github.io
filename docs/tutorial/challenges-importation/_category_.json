@@ -1,0 +1,8 @@
+{
+  "label": "Challenges Importation",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "There is 2 ways of configuring challenges. Add them from hand, or sync them with github."
+  }
+}

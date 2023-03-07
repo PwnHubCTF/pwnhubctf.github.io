@@ -2,46 +2,23 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# What's PwnHUB ?
 
-Let's discover **Docusaurus in less than 5 minutes**.
+PwnHUB is a CTF Platform, containing all basic CTF features like **[CTFd](https://ctfd.io/)**, with a lot of additions.
 
-## Getting Started
+<!-- You can **Try PwnHUB** with this demo **[pwnhub](https://pwnhub.io/)**. -->
 
-Get started by **creating a new site**.
+### Main Features
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+In addition of basics ctf features, this framework has:
+- An automatic challenge deploying system, to allow each user to have they own instance of challenges
+- An XSS Bot integrated to the platform, for XSS web challenges
+- A player category gestion, with their own associated scoreboards
+- Auto-challenge importation: Push the challenges on a github repository, and they will be parsed & added to the ctf
+- Signed flag for each player (automatically integrated for instance challenges), to avoid flag sharing
 
-### What you'll need
+And many other cool stuff, like a theme gestion, UI Display choices for the player, a discord webhook to send the first bloods
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Also, scoreboard is compatible with CTF Time:
+scoreboard route: `/api/scoreboard`
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
