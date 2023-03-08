@@ -64,6 +64,9 @@ sign_flag: false # If this variable is set to true, the flag will be signed for 
 author: eteck # Author of the challenge. Not required
 instance: false # Choice in false | single | multiple. More infos in Challenge Instance section
 difficulty: 1 # Choice in 0 | 1 | 2 | 3 | 4
+tags: # Challenge tags. Not required
+  - tag1
+  - tag2
 files: # The files accessible to the players. Not required
   - source.py
 ```
