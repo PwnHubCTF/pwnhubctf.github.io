@@ -17,7 +17,7 @@ In addition of basics ctf features, this framework has:
 - Auto-challenge importation: Push the challenges on a github repository, and they will be parsed & added to the ctf
 - Signed flag for each player (automatically integrated for instance challenges), to avoid flag sharing
 
-And many other cool stuff, like a theme gestion, UI Display choices for the player, a discord webhook to send the first bloods
+And many other cool stuff, like a theme gestion, UI Display choices for the player, a discord webhook to send the first bloods, a team chat/personnal notes for challenges
 
 Also, scoreboard is compatible with CTF Time:
 scoreboard route: `/api/scoreboard`
