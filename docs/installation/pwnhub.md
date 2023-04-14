@@ -12,11 +12,11 @@ Take this [script](https://raw.githubusercontent.com/PwnHubCTF/installation/main
 
 Set +x right on the script with `chmod +x ./script_front.sh`
 
-You can also execute this script with a oneliner
+<!-- You can also execute this script with a oneliner
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/PwnHubCTF/installation/main/script_front.sh) -d <domain> [-p] password
 ```
-
+-->
 ### Script usage
 
 `./script_front.sh -d <domain> [-p] password`
